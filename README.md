@@ -1,11 +1,11 @@
 # IMAGE-PROCESSING-USING-VERILOG-
-# Tools: 
+## Tools: 
 * Vivado 
 * Matlab 
-# Block diagram 
+## Block diagram 
 <img width="1078" height="473" alt="image" src="https://github.com/user-attachments/assets/f45f6c96-784c-4870-8f8b-b133b69f6a90" />
 
-# Ideal: 
+## Ideal: 
 - Fistly, convert JPG file to hex ( Matlab ). 
 - Calcualte the median pixel.
 - Convert hex file ( processed) into JPG file. 
@@ -15,7 +15,7 @@
 * **3x3 Sliding Window:** Uses a Line Buffer to generate a 3x3 pixel in real-time.
 * **Sorting Network:** Implements an optimized comparator network to find the median value of 9 pixels without complex sorting algorithms.
 * **Resource Efficient:** Designed for FPGA implementation using minimal logic resources.
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 .
