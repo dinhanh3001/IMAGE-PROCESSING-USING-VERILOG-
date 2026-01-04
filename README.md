@@ -1,4 +1,8 @@
 # IMAGE-PROCESSING-USING-VERILOG-
+
+<img width="1078" height="562" alt="image" src="https://github.com/user-attachments/assets/68d1f4d8-8aad-4ec5-976e-74c9767c6f4a" />
+
+* The right image, This is the noise image and in the left, it is image after proceesed 
 ## Tools: 
 * Vivado 
 * Matlab 
@@ -33,3 +37,9 @@
 │   ├── input_image.hex        # Noisy input data
 │   └── output_image.hex       # Filtered output data
 └── README.md
+```
+## The design consists of three main stages: 
+* 1. Line buffer: Input pixels stream in real time. The line_buffer stores the previous two rows using internal RAM.
+* 2. Window generation: Three register shift data at every clock cycle to form 3x3 moving window around the current pixel.
+* 3. Median calculation: Instead of sortin all 9 pixels, the design use a network of compare_swap models: Stage 1: Sort each of the 3 rows independently,
+Stage 2: Sort the columns of the resulting matrix (Min column, Median column, Max column), Stage 3: Compare specific diagonal elements to pinpoint the median value.
