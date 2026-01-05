@@ -45,6 +45,7 @@
 1. Line buffer: Input pixels stream in real time. The line_buffer stores the previous two rows using internal RAM.
 2. Window generation: Three register shift data at every clock cycle to form 3x3 moving window around the current pixel.
 3. Median calculation: Instead of sortin all 9 pixels, the design use a network of compare_swap models:
+
 Stage 1: Sort each of the 3 rows independently.
 
 Stage 2: Sort the columns of the resulting matrix (Min column, Median column, Max column) 
