@@ -51,3 +51,6 @@ Stage 1: Sort each of the 3 rows independently.
 Stage 2: Sort the columns of the resulting matrix (Min column, Median column, Max column) 
 
 Stage 3: Compare specific diagonal elements to pinpoint the median value.
+## Contact: 
+* Author: Nguyen Dinh Anh.
+* Email: anhdinh30012005@gmail.com
