@@ -1,6 +1,7 @@
 # IMAGE-PROCESSING-USING-VERILOG-
 
-> ** NOTE: **  This project is currently a work in Progress. The full core and system are completed, but the report in my university has not Done. So that, I will update full source code on the next month ( 2/2026).
+> ** NOTE: **  This project is currently a work in Progress. The full core and system are completed, but the report in my university has not Done. So that, I will update full source code in the next month (2/2026).
+
 
 <img width="1078" height="562" alt="image" src="https://github.com/user-attachments/assets/68d1f4d8-8aad-4ec5-976e-74c9767c6f4a" />
 
