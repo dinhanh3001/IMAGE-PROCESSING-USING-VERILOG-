@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Dec 11 11:33:07 2025
+# Process ID: 4232
+# Current directory: E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.runs/synth_1
+# Command line: vivado.exe -log IMAGE_PROCESSING_MEDIAN.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source IMAGE_PROCESSING_MEDIAN.tcl
+# Log file: E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.runs/synth_1/IMAGE_PROCESSING_MEDIAN.vds
+# Journal file: E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.runs/synth_1\vivado.jou
+# Running On: LAPTOP-PII719PV, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 25494 MB
+#-----------------------------------------------------------
+source IMAGE_PROCESSING_MEDIAN.tcl -notrace

@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"BUFFER_LINE_TESTBENCH_func_synth.v" \
+"../../../../../MEDIAN_FILTER.srcs/sim_1/new/BUFFER_LINE_TESTBENCH.v" \
+
+# Do not sort compile order
+nosort

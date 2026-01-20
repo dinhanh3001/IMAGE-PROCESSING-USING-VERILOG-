@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../MEDIAN_FILTER.srcs/sources_1/new/BUFFER_LINE.v" \
+"../../../../MEDIAN_FILTER.srcs/sources_1/new/IMAGE_PROCESSING_MEDIAN.v" \
+"../../../../MEDIAN_FILTER.srcs/sources_1/new/MEDIAN_FILTER.v" \
+"../../../../MEDIAN_FILTER.srcs/sources_1/new/RAM.v" \
+"../../../../MEDIAN_FILTER.srcs/sources_1/new/SORT_3_MODE.v" \
+"../../../../MEDIAN_FILTER.srcs/sources_1/new/WINDOW_MANAGE_UINT.v" \
+"../../../../MEDIAN_FILTER.srcs/sources_1/new/compare_swap.v" \
+"../../../../MEDIAN_FILTER.srcs/sim_1/new/TEST_BENCH.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

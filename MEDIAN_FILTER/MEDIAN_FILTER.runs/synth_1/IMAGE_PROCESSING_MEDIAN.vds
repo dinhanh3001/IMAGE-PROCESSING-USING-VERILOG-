@@ -1,0 +1,383 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Dec 11 11:33:07 2025
+# Process ID: 4232
+# Current directory: E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.runs/synth_1
+# Command line: vivado.exe -log IMAGE_PROCESSING_MEDIAN.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source IMAGE_PROCESSING_MEDIAN.tcl
+# Log file: E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.runs/synth_1/IMAGE_PROCESSING_MEDIAN.vds
+# Journal file: E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.runs/synth_1\vivado.jou
+# Running On: LAPTOP-PII719PV, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 25494 MB
+#-----------------------------------------------------------
+source IMAGE_PROCESSING_MEDIAN.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/utils_1/imports/synth_1/BUFFER_LINE.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/utils_1/imports/synth_1/BUFFER_LINE.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top IMAGE_PROCESSING_MEDIAN -part xczu9eg-ffvb1156-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10668
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [F:/VIVADO/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 848.348 ; gain = 410.781
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'IMAGE_PROCESSING_MEDIAN' [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/IMAGE_PROCESSING_MEDIAN.v:106]
+INFO: [Synth 8-6157] synthesizing module 'BUFFER_LINE' [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/BUFFER_LINE.v:23]
+	Parameter WIDTH bound to: 430 - type: integer 
+	Parameter HEIGHT bound to: 554 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'RAM' [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:23]
+	Parameter WIDTH bound to: 430 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'RAM' (0#1) [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:23]
+WARNING: [Synth 8-689] width (10) of port connection 'addr' does not match port width (9) of module 'RAM' [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/BUFFER_LINE.v:80]
+WARNING: [Synth 8-689] width (32) of port connection 'addr' does not match port width (9) of module 'RAM' [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/BUFFER_LINE.v:88]
+INFO: [Synth 8-6155] done synthesizing module 'BUFFER_LINE' (0#1) [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/BUFFER_LINE.v:23]
+INFO: [Synth 8-6157] synthesizing module 'WINDOW_MANAGE_UINT' [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/WINDOW_MANAGE_UINT.v:23]
+	Parameter WIDTH bound to: 430 - type: integer 
+	Parameter HEIGHT bound to: 554 - type: integer 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'WINDOW_MANAGE_UINT' (0#1) [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/WINDOW_MANAGE_UINT.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MEDIAN_FILTER' [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/MEDIAN_FILTER.v:23]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/MEDIAN_FILTER.v:70]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/MEDIAN_FILTER.v:70]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/MEDIAN_FILTER.v:70]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/MEDIAN_FILTER.v:70]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/MEDIAN_FILTER.v:70]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/MEDIAN_FILTER.v:70]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/MEDIAN_FILTER.v:70]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/MEDIAN_FILTER.v:70]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/MEDIAN_FILTER.v:70]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/MEDIAN_FILTER.v:70]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/MEDIAN_FILTER.v:70]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/MEDIAN_FILTER.v:70]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/MEDIAN_FILTER.v:70]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/MEDIAN_FILTER.v:70]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/MEDIAN_FILTER.v:70]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/MEDIAN_FILTER.v:70]
+INFO: [Synth 8-6157] synthesizing module 'SORT_3_MODE' [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/SORT_3_MODE.v:23]
+INFO: [Synth 8-6157] synthesizing module 'compare_swap' [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/compare_swap.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'compare_swap' (0#1) [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/compare_swap.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SORT_3_MODE' (0#1) [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/SORT_3_MODE.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MEDIAN_FILTER' (0#1) [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/MEDIAN_FILTER.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'IMAGE_PROCESSING_MEDIAN' (0#1) [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/IMAGE_PROCESSING_MEDIAN.v:106]
+WARNING: [Synth 8-7137] Register MEMORY_reg[1] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[2] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[3] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[4] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[5] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[6] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[7] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[8] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[9] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[10] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[11] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[12] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[13] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[14] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[15] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[16] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[17] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[18] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[19] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[20] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[21] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[22] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[23] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[24] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[25] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[26] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[27] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[28] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[29] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[30] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[31] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[32] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[33] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[34] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[35] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[36] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[37] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[38] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[39] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[40] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[41] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[42] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[43] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[44] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[45] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[46] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[47] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[48] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[49] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[50] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[51] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[52] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[53] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[54] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[55] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[56] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[57] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[58] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[59] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[60] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[61] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[62] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[63] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[64] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[65] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[66] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[67] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[68] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[69] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[70] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[71] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[72] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[73] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[74] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[75] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[76] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[77] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[78] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[79] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[80] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[81] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[82] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[83] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[84] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[85] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[86] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[87] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[88] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[89] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[90] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[91] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[92] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[93] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[94] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[95] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[96] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[97] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[98] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[99] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+WARNING: [Synth 8-7137] Register MEMORY_reg[100] in module RAM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v:41]
+INFO: [Common 17-14] Message 'Synth 8-7137' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3848] Net done_buffer in module/entity BUFFER_LINE does not have driver. [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/BUFFER_LINE.v:49]
+WARNING: [Synth 8-3848] Net o_valid in module/entity MEDIAN_FILTER does not have driver. [E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/MEDIAN_FILTER.v:46]
+WARNING: [Synth 8-7129] Port o_valid in module MEDIAN_FILTER is either unconnected or has no load
+WARNING: [Synth 8-7129] Port done_buffer in module BUFFER_LINE is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1042.758 ; gain = 605.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1042.758 ; gain = 605.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu9eg-ffvb1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-e
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1042.758 ; gain = 605.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1118.961 ; gain = 681.395
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 870   
++---Muxes : 
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 43    
+	   2 Input    1 Bit        Muxes := 861   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2520 (col length:168)
+BRAMs: 1824 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port o_valid in module MEDIAN_FILTER is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:36 . Memory (MB): peak = 1834.832 ; gain = 1397.266
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 1834.832 ; gain = 1397.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 1834.832 ; gain = 1397.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 1834.832 ; gain = 1397.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 1834.832 ; gain = 1397.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 1834.832 ; gain = 1397.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 1834.832 ; gain = 1397.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 1834.832 ; gain = 1397.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 1834.832 ; gain = 1397.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY8 |    32|
+|3     |LUT1   |    22|
+|4     |LUT2   |   224|
+|5     |LUT3   |    93|
+|6     |LUT4   |   418|
+|7     |LUT5   |   292|
+|8     |LUT6   |  3035|
+|9     |MUXF7  |   544|
+|10    |MUXF8  |   192|
+|11    |FDCE   |   134|
+|12    |FDRE   |  6912|
+|13    |IBUF   |    13|
+|14    |OBUF   |    18|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------+-------------------+------+
+|      |Instance      |Module             |Cells |
++------+--------------+-------------------+------+
+|1     |top           |                   | 11932|
+|2     |  BUFFER      |BUFFER_LINE        | 11228|
+|3     |    RAM1      |RAM                |  5763|
+|4     |    RAM2      |RAM_25             |  5366|
+|5     |  FILTER      |MEDIAN_FILTER      |   126|
+|6     |    MEDIAN    |SORT_3_MODE        |    25|
+|7     |      com1    |compare_swap_22    |    23|
+|8     |      com2    |compare_swap_23    |     1|
+|9     |      com3    |compare_swap_24    |     1|
+|10    |    sort_col1 |SORT_3_MODE_0      |     2|
+|11    |      com1    |compare_swap_20    |     1|
+|12    |      com2    |compare_swap_21    |     1|
+|13    |    sort_col2 |SORT_3_MODE_1      |     8|
+|14    |      com1    |compare_swap_17    |     6|
+|15    |      com2    |compare_swap_18    |     1|
+|16    |      com3    |compare_swap_19    |     1|
+|17    |    sort_col3 |SORT_3_MODE_2      |     8|
+|18    |      com1    |compare_swap_14    |     6|
+|19    |      com2    |compare_swap_15    |     1|
+|20    |      com3    |compare_swap_16    |     1|
+|21    |    sort_row1 |SORT_3_MODE_3      |     6|
+|22    |      com1    |compare_swap_11    |     2|
+|23    |      com2    |compare_swap_12    |     2|
+|24    |      com3    |compare_swap_13    |     2|
+|25    |    sort_row2 |SORT_3_MODE_4      |    63|
+|26    |      com1    |compare_swap_8     |    51|
+|27    |      com2    |compare_swap_9     |     2|
+|28    |      com3    |compare_swap_10    |    10|
+|29    |    sort_row3 |SORT_3_MODE_5      |     6|
+|30    |      com1    |compare_swap       |     2|
+|31    |      com2    |compare_swap_6     |     2|
+|32    |      com3    |compare_swap_7     |     2|
+|33    |  WINDOW      |WINDOW_MANAGE_UINT |   544|
++------+--------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 1834.832 ; gain = 1397.266
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 454 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 1834.832 ; gain = 1397.266
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 1834.832 ; gain = 1397.266
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1846.672 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 784 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1869.082 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  BUFG => BUFGCE: 3 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 13 instances
+
+Synth Design complete, checksum: 38a58ba5
+INFO: [Common 17-83] Releasing license: Synthesis
+33 Infos, 124 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:47 . Memory (MB): peak = 1869.082 ; gain = 1442.770
+INFO: [Common 17-1381] The checkpoint 'E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.runs/synth_1/IMAGE_PROCESSING_MEDIAN.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file IMAGE_PROCESSING_MEDIAN_utilization_synth.rpt -pb IMAGE_PROCESSING_MEDIAN_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 11 11:34:00 2025...

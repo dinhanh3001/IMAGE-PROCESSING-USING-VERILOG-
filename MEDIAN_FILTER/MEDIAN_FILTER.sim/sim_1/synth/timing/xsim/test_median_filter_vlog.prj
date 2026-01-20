@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"test_median_filter_time_synth.v" \
+"../../../../../MEDIAN_FILTER.srcs/sim_1/new/test_median_filter.v" \
+
+# Do not sort compile order
+nosort

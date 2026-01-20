@@ -1,0 +1,16 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/BUFFER_LINE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BUFFER_LINE
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/IMAGE_PROCESSING_MEDIAN.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IMAGE_PROCESSING_MEDIAN
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/MEDIAN_FILTER.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEDIAN_FILTER
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/SORT_3_MODE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SORT_3_MODE
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/WINDOW_MANAGE_UINT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WINDOW_MANAGE_UINT
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sources_1/new/compare_swap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module compare_swap
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/HE_THONG_SO_HDL/THUC_HANH/LAB_2_VIVADO/BAI_1/MEDIAN_FILTER/MEDIAN_FILTER.srcs/sim_1/new/TEST_BENCH.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TEST_BENCH
